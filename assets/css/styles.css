@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 * {
 margin: 0;
 padding :0;
 border: none;}
-body{font-family: lato, sans-serif;
+
+body{
+font-family: Lato, sans-serif;
 font-weight: 300;
 color: #3a3a3a;
 }
- /* headings logo */
+ /* headings and logo */
 
 h1, h2 {
-font-family:oswald, sans-serif;
+font-family:Oswald, sans-serif;
 text-transform: uppercase;
 letter-spacing: 4px;
 color: #252525;
@@ -22,6 +24,7 @@ color: #252525;
     font-size: 280%;
     margin-left: 30px;
 }
+/* navigation links */
 
 #menu {
     font-size: 110%;
@@ -29,8 +32,7 @@ color: #252525;
 }
  #menu, #logo {
 line-height: 75px;
-
- }
+}
 
 #menu li 
 {float: right;
@@ -40,11 +42,11 @@ margin-right: 30px;
 
 #menu a {
     text-decoration: none;
-    
+    color: inherit;
 }
 
 #menu a:hover{ 
-border-radius: 1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .actve {
@@ -87,7 +89,7 @@ to{
 
 #cover-text {
     font-size: 130%;
-    font-family: oswald, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
 
@@ -111,7 +113,7 @@ to{
 }
 
 #left-about {
-    padding: top 30px;
+    padding-top: 30px;
     width: 33%;
     float: left;
   
@@ -130,10 +132,10 @@ to{
    
 }
 
-hr{
+hr {
 border-top: 1px solid #3A3A3A3A;
 width: 100%;
-margin: 5px;
+margin: 5px 0;
 }
 
 .left-about-heading {
@@ -162,7 +164,7 @@ margin: 5px;
 
 #welcome {
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
     font-size:280%;
 }
 
@@ -171,7 +173,7 @@ margin: 5px;
     height: 300px;
     padding: 30px;
     border-style: solid;
-    border-color:#CCC;
+    border-color: #ccc;
     border-width: 1px;
     border-radius: 50%;
     margin: 0 auto;
@@ -225,3 +227,43 @@ height: 150%;
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* gallery*/
+
+#photos{
+    clear:both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+    ;
+}
+#photos > img {
+width: 100%;
+}
+/* media queries*/
+
+@media screen and (max-width:1200px) {
+    #club-ethos { 
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    #welcom {
+        padding:30px 0;
+        margin: 0;
+
+    }
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0; }
+    #center-about {
+clear: both;
+width: 100%;
+float: left;
+padding: 0; }
+hr { 
+    display: none;}
+
+}
+    
