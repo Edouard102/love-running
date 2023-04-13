@@ -262,6 +262,7 @@ clear: both;
 width: 100%;
 float: left;
 padding: 0; }
+
 #time > div {
     width: 100%;
         clear: both;
@@ -302,9 +303,15 @@ hr {
 
     .left-about-heading p, .right-about-heading p {
         text-align: center;
-        padding: 0 20px;
-    }
+        padding: 0 20px;}
+   
+        #photos {
+        column-count: 3;}
 }
+/* For small screen sizes below 800px width */
 
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;}}
   
   
